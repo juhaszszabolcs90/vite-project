@@ -17,7 +17,11 @@
   
   {time.toLocaleDateString()}
 
-  <hr><input type="text">
+  <hr><input type="text" bind:value={szam}>
+  <br>
+  2-es számrendszer: {Number(szam).toString(2)};
+  16-os számrendszer: {Number(szam).toString(16)};
+
 </main>
 
 <style>
